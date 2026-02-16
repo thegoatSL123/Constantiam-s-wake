@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constantiam's Wake | Anarchy Reborn</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico>
+</head>
+<body>
+
+    <div class="server-ip">IP: consumer-calcium.gl.joinmc.link</div>
+
+    <header>
+        <h1>CONSTANTIAM'S WAKE</h1>
+        <p class="subtitle">No Rules. No Limits. Only Survival.</p>
+    </header>
+
+    <main>
+        <section id="leaderboard">
+            <h2>The Vanguard (First Arrivals)</h2>
+            <div id="top-players" class="player-list">
+                </div>
+        </section>
+
+        <section id="registration">
+            <div id="register-ui">
+                <input type="text" id="usernameInput" placeholder="Minecraft Username...">
+                <button id="joinBtn" onclick="registerPlayer()">Join the Wake</button>
+            </div>
+            <div id="welcome-msg" class="hidden">
+                <p style="color: #ffd700; font-weight: bold;">YOU HAVE JOINED THE WAKE.</p>
+            </div>
+        </section>
+
+        <button class="nav-btn" onclick="toggleSuggestions()">File a Suggestion</button>
+        <div id="suggestion-box" class="hidden">
+            <h3>Submit Suggestion</h3>
+            <form action="https://formsubmit.co/charaka1948@gmail.com" method="POST">
+                <input type="text" name="username" placeholder="Your Username" required>
+                <textarea name="message" placeholder="What should we add?" required></textarea>
+                <button type="submit">Send to Admin</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.6.1/firebase-database-compat.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
